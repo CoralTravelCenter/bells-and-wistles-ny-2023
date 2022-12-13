@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+  .hidden-on-mobile {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hidden-on-desktop {
+    display: none !important;
+  }
+}

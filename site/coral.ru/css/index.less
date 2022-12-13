@@ -1,0 +1,68 @@
+@import "../../common/css/common";
+
+#snowfall {
+	pointer-events: none;
+	.proportional(3/1);
+	position: absolute;
+	z-index: 20;
+	left: 0;
+	top: 0;
+	width: 100%;
+	@media screen and (max-width: 575px) {
+		.proportional(1/1);
+		position: absolute;
+	}
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+}
+header.site-header {
+	position: relative;
+	z-index: 11;
+	#ny2023-decor {
+		.proportional(2600/106);
+		position: absolute;
+		z-index: -1;
+		width: 2600px;
+		top: auto;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background: url("https://image.useinsider.com/coraltravel/defaultImageLibrary/ny2023-decor-1670837450.png") center no-repeat;
+		background-size: contain;
+		.transit(opacity);
+		opacity: 0;
+		@media screen and (max-width: 575px) {
+			.proportional(575/183);
+			position: absolute;
+			width: 100%;
+			background-image: url(https://image.useinsider.com/coraltravel/defaultImageLibrary/ny2023-decor-mobile-1670838669.png);
+		}
+
+		&.shown {
+			opacity: 1;
+		}
+	}
+}
+.site-header-container .container-other .container-topside {
+	.transit(background);
+	@media screen and (max-width: 575px) {
+		background: none!important;
+	}
+	&.ny2023-back {
+		background: url("https://image.useinsider.com/coraltravel/defaultImageLibrary/ny2023-decor-sticky-mobile-1670839810.png") center no-repeat !important;
+		background-size: cover!important;
+	}
+}
+
+.site-header-container .container-other .container-tabs .container-phone {
+	margin-top: -25px!important;
+}
+
+div.container-tabItemWrap .container-tabItem.activeTab {
+	@media screen and (max-width: 1006px) {
+	    z-index: 11;
+	}
+}
