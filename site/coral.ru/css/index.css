@@ -55,10 +55,18 @@ header.site-header {
   position: relative;
   z-index: 11;
 }
+header.site-header #ny2023-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
 header.site-header #ny2023-decor {
   position: relative;
   position: absolute;
-  z-index: -1;
   width: 2600px;
   top: auto;
   bottom: 0;
