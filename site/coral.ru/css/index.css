@@ -51,6 +51,14 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+body.preventpagescroll header.site-header {
+  z-index: unset;
+}
+@media screen and (max-width: 575px) {
+  .site-header .site-header-container .container-other {
+    padding-top: 4.3em;
+  }
+}
 header.site-header {
   position: relative;
   z-index: 11;
@@ -131,6 +139,7 @@ header.site-header #ny2023-decor.shown {
 .site-header-container .container-other .container-topside.ny2023-back {
   background: url("https://image.useinsider.com/coraltravel/defaultImageLibrary/ny2023-decor-sticky-mobile-1670839810.png") center no-repeat !important;
   background-size: cover!important;
+  animation: none;
 }
 .site-header-container .container-other .container-tabs .container-phone {
   margin-top: -25px !important;
